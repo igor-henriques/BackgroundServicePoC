@@ -1,0 +1,9 @@
+﻿global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
+global using BackgroundServicePoC.Queue;
+global using System.Threading.Channels;
+global using BackgroundServicePoC.Services;
+global using BackgroundServicePoC.Utils;
+global using BackgroundServicePoC.Models;
+global using System.Diagnostics;
