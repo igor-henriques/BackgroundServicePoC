@@ -1,7 +1,6 @@
 ﻿public class Application
 {
     private readonly List<Bolsa> _bolsasPendentes = Bolsa.GenerateList();
-    private readonly List<Bolsa> _bolsasFalhaProcessamento = new();
 
     private readonly IBackgroundTaskQueue _taskQueue;
     private readonly ILogger<Application> _logger;
