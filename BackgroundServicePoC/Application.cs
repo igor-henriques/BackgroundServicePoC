@@ -1,7 +1,5 @@
 ﻿public class Application
 {
-    private readonly List<Bolsa> _bolsasPendentes = Bolsa.GenerateList();
-
     private readonly IBackgroundTaskQueue _taskQueue;
     private readonly ILogger<Application> _logger;
     private readonly CancellationToken _cancellationToken;
@@ -18,7 +16,7 @@
 
     private async ValueTask PostCollectionIntoQueue()
     {
-        foreach (var bolsa in _bolsasPendentes)
+        foreach (var bolsa in Bolsa.GenerateList())
         {
             if (_cancellationToken.IsCancellationRequested) break;
 
