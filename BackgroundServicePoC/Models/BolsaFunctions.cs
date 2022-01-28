@@ -16,9 +16,4 @@ public partial record Bolsa
             .Select(i => new Bolsa((ulong)i, $"Customer Nº {i + 1}"))
             .ToList();
     }
-
-    public void SetCustomerName(string name)
-    {
-        this.Customer = name;
-    }
 }
