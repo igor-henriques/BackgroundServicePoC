@@ -35,6 +35,8 @@
         {
             try
             {
+                if (_cancellationToken.IsCancellationRequested) return;
+
                 var sw = Stopwatch.StartNew();
 
                 await Task.Delay(bolsa.EstimatedTaskDuration, token);
