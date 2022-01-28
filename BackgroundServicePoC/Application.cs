@@ -39,7 +39,7 @@
             {
                 var sw = Stopwatch.StartNew();
 
-                await Task.Delay((int)bolsa.EstimatedTaskDuration, token);
+                await Task.Delay(bolsa.EstimatedTaskDuration, token);
 
                 if (bolsa.Id is 2) throw new Exception("Teste de exception");
 

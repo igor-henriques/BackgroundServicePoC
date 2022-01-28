@@ -2,6 +2,6 @@
 
 public class Randomizer
 {
-    public static uint GetRandomUInt(int initialIntervalInMilisseconds = 500, int finalIntervalInMillseconds = 5000)
-        => (uint)new Random().Next(initialIntervalInMilisseconds, finalIntervalInMillseconds);
+    public static int GetRandomUInt(int initialIntervalInMilisseconds = 500, int finalIntervalInMillseconds = 5000)
+        => new Random().Next(initialIntervalInMilisseconds, finalIntervalInMillseconds);
 }
