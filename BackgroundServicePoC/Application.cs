@@ -37,9 +37,7 @@
         {
             try
             {
-                Stopwatch sw = new();
-
-                sw.Start();
+                var sw = Stopwatch.StartNew();
 
                 await Task.Delay((int)bolsa.EstimatedTaskDuration, token);
 
